@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</head>
+<body>
+    <h1>String Operations</h1>
+    <form id="stringForm">
+        <label for="input_string">Enter a string:</label>
+        <input type="text" id="input_string" name="input_string">
+        <button type="button" id="reverseButton">Reverse</button>
+        <button type="button" id="changeCaseButton">Change Case</button>
+        <button type="button" id="encryptButton">Encrypt (SHA-256)</button>
+    </form>
+    <div id="output"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
